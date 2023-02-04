@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  margin: 0 10px;
+  margin: 50px 10px;
   width: 400px;
   background-color: hsl(216deg, 50%, 16%);
   padding: 30px;
