@@ -38,6 +38,11 @@ main {
   color: white;
   font-size: 1.7rem;
   font-weight: 600;
+  cursor: pointer;
+}
+.about .name:hover {
+  color: hsl(178deg, 100%, 50%);
+  transition: 0.3s ease;
 }
 .about-para {
   font-size: 1.42rem;
@@ -79,6 +84,11 @@ main {
 }
 .avatar .name-col {
   color: white;
+  cursor: pointer;
+}
+.avatar .name-col:hover {
+  color: hsl(178deg, 100%, 50%);
+  transition: 0.3s ease;
 }
 .avatar .avt-txt {
   color: hsl(215deg, 51%, 70%);
@@ -87,6 +97,29 @@ main {
 }
 
 .eq-img {
+  display: block;
   width: 100%;
+  height: auto;
   border-radius: 15px;
+}
+
+.eye {
+  position: absolute;
+  top: 42.57%;
+  left: 44.65%;
+  opacity: 0;
+}
+
+.img-container {
+  position: relative;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.img-container:hover .eye {
+  opacity: 1;
+}
+.img-container:hover .eq-img {
+  transition: 0.3s ease;
+  opacity: 0.5;
 }/*# sourceMappingURL=index.css.map */

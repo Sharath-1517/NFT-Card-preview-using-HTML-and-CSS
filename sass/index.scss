@@ -35,6 +35,12 @@ main {
         color: white;
         font-size: 1.7rem;
         font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            color: $eth-col;
+            transition: .3s ease;
+        }
     }
 
     &-para {
@@ -84,17 +90,83 @@ main {
 
     .name-col {
         color: white;
+        cursor: pointer;
+
+        &:hover {
+            color: $eth-col;
+            transition: .3s ease;
+        }
     }
 
     .avt-txt {
         color: $days-col;
         font-weight: 400;
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
 
 }
 
 .eq-img {
+    display: block;
     width: 100%;
+    height: auto;
     border-radius: 15px;
 }
+
+.eye {
+    position: absolute;
+    top: 42.57%;
+    left: 44.65%;
+    opacity: 0;
+}
+
+.img-container {
+    position: relative;
+    background-color: $eth-col;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover{
+        .eye {
+            opacity: 1;
+        }
+
+        .eq-img {
+            transition: .3s ease;
+            opacity: .5;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .img-container {
+//     position: relative;
+//     border-radius: 20px;
+//     &:hover .eye{
+//         opacity: 1;
+//     }
+// }
+
+// .eye {
+//     position: absolute;
+//     top: 45%;
+//     left: 45%;
+//     opacity: 0;
+
+    
+// }
